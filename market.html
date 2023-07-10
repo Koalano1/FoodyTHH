@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt hàng</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="p-relative">
+    <header class="detail p-relative" id="detail_page">
+        <div class="header__container flex flex-c">
+            <div class="header__container--logo" style="padding-right: 50px;">
+                <a href=""><img width="153px" height="30px" src="image/detail/logoheader.png" alt=""></a>
+            </div>
+            <div class="header__container--main flex flex-c flex-sb">
+                
+                <nav class="header__container--main-menu flex flex-c">
+                    <div class="header__container--main-location">
+                        <button class="flex flex-c">
+                            Hà Nội
+                            <i class="fa-solid fa-caret-down"></i>
+                        </button>
+                    </div>
+                    <ul class="flex flex-c flex-sb">
+                        <li class="style-li" style="border-bottom: none;"><a href="" class="f-14" style=" font-weight: normal; color: #000000;">Đồ ăn</a></li>
+                        <li class="style-li market"><a href="" class="f-14">Thực phẩm</a></li>
+                        <li class="style-li"><a href="" class="f-14">Bia</a></li>
+                        <li class="style-li"><a href="" class="f-14">Hoa</a></li>
+                        <li class="style-li"><a href="" class="f-14">Siêu thị</a></li>
+                        <li class="style-li"><a href="" class="f-14">Thú cưng</a></li>
+                    </ul>
+                </nav>
+                <div class="header__container--main-btn flex flex-c">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="login.html">
+                        <button class="login-detail f-14">
+                            Đăng nhập
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class=" p-absolute header__container--vietnam flex flex-c">
+                <a href=""><img width="22px" height="22px" src="image/index/vietnamese.png" alt=""></a>
+                <i class="fa-solid fa-caret-down" style="color: #b3aeae;
+                padding-left: 5px; padding-bottom: 5px;
+                font-size: 14px;"></i>
+            </div>
+        </div>
+    </header>
+    <main class="banner__main--market">
+        <section class="container-xl content__aboveimage">
+            <div class="content__aboveimage--infor">
+                <h1 class="title c-w" style="padding-bottom: 10px;">Đặt Đồ ăn, giao hàng từ 20'...</h1>
+                <div class="local c-w" style="font-size: 15px;">Có 44609 địa điểm ở Hà Nội từ 00:00 - 23:59</div>
+                <div class="flex flex-c" style="margin: 20px 0;">
+                    <input type="text" id="txtSearchHome" placeholder="Tìm địa điểm, món ăn, địa chỉ..." value="">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="category-list-filter">
+                    <a href="/ha-noi/danh-sach-dia-diem-giao-tan-noi"><span class="category-item ">All</span></a><a href="/ha-noi/danh-sach-dia-diem-phuc-vu-food-giao-tan-noi"><span class="category-item ">Đồ ăn</span></a><a href="/ha-noi/danh-sach-dia-diem-phuc-vu-drink-giao-tan-noi"><span class="category-item ">Đồ uống</span></a><a href="/ha-noi/danh-sach-dia-diem-phuc-vu-vegetarian-giao-tan-noi"><span class="category-item ">Đồ chay</span></a><a href="/ha-noi/danh-sach-dia-diem-phuc-vu-cake-pastry-giao-tan-noi"><span class="category-item ">Bánh kem</span></a><a href="/ha-noi/danh-sach-dia-diem-phuc-vu-desserts-giao-tan-noi"><span class="category-item ">Tráng miệng</span></a><a href="/ha-noi/danh-sach-dia-diem-phuc-vu-home-made-giao-tan-noi"><span class="category-item ">Homemade</span></a><a href="/ha-noi/danh-sach-dia-diem-phuc-vu-streetfood-giao-tan-noi"><span class="category-item ">Vỉa hè</span></a><a href="/ha-noi/danh-sach-dia-diem-phuc-vu-pizza-pasta-burger-giao-tan-noi"><span class="category-item ">Pizza/Burger</span></a><a href="/ha-noi/danh-sach-dia-diem-phuc-vu-chicken-giao-tan-noi"><span class="category-item ">Món gà</span></a><a href="/ha-noi/danh-sach-dia-diem-phuc-vu-hotpot-giao-tan-noi"><span class="category-item ">Món lẩu</span></a><a href="/ha-noi/danh-sach-dia-diem-phuc-vu-sushi-giao-tan-noi"><span class="category-item ">Sushi</span></a><a href="/ha-noi/danh-sach-dia-diem-phuc-vu-soup-based-giao-tan-noi"><span class="category-item ">Mì phở</span></a><a href="/ha-noi/danh-sach-dia-diem-phuc-vu-rice-giao-tan-noi"><span class="category-item ">Cơm hộp</span></a>
+                </div>
+                <div>
+                    <div style="color: #ffffff; line-height: 1.5; font-size: 18px;">
+                        Sử dụng App ShopeeFood để có nhiều giảm giá <br>và trải nghiệm tốt hơn
+                    </div>
+                    <div class="flex flex-c" style="margin: 10px 0;">
+                        <a href="" style="margin-right: 20px;"><img width="164px" height="51px" src="image/market/appstore.png" alt=""></a>
+                        <a href=""><img width="164px" height="51px" src="image/market/ggplay.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="content__aboveimage--foodmarket">
+                <nav>
+                    <ul>
+                        <li><a href="" style="color: #0288d1; font-weight: bolder;">Đồ ăn</a></li>
+                        <li><a href=""><i class="fa-solid fa-arrow-right"></i></a></li>
+                        <li><a href="">Chọn địa chỉ giao hàng</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href=""><i class="fa-solid fa-chevron-right"></i></a></li>
+                    </ul>
+                </nav>
+                <div style=" background-color: #ffffff; padding: 15px; border-radius: 5px; margin-top: 20px; padding: 15px 30px;">
+                    <ul class="flex flex-c flex-sb">
+                        <li class="style-li"><h4>Ưu đãi</h4></li>
+                        <li class="style-li"><a href="" style="font-size: 14px; color: #0288d1;"><i class="fa-solid fa-border-all" style="padding-right: 5px; font-size: 12px;"></i>Xem tất cả</a></li>
+                    </ul>
+                    <section class="order__food order__food--dealsList order__food--dealsListMarket" style="gap: 20px;">
+                        <div class="card p-relative" style="border-radius: 5px; border: 1px solid #ccc;">
+                            <div class="card__image">
+                                <a href=""><img style="border-radius: 5px 5px 0 0;" src="image/cart/p1.jpeg" alt=""></a>
+                            </div>
+                            <div class="card__address">
+                                <h4 class="f-14 truncate">
+                                    <img src="image/cart/hh.png" style="translate: 0 3px;" alt="" width="17px" height="17px">
+                                    Le Castella Hà Nội - Taste Of Taiwan - Vũ Hữu
+                                </h4>
+                                <p class="f-12 truncate" style="padding-top: 5px; color: #555353;">
+                                    170 Vũ Hữu, P. Thanh Xuân Bắc, Thanh Xuân, Hà Nội
+                                </p>
+                            </div>
+                            <div style="border-bottom: 1px solid #eee;"></div>
+                            <div class="card__recommend f-12" style="padding-bottom: 10px;">
+                                <i class="fa-solid fa-tag" style="color: red; font-size: 16px !important; padding-right: 6px;"></i>
+                                <strong style="color: #187caa;">Giảm hết 6%</strong>
+                            </div>
+                            <span class="stt online p-absolute" title="Mở cửa" style="color: rgb(35, 152, 57); background-color: rgb(35, 152, 57); width: 15px; height: 15px; display: block; border-radius: 50%;"></span>
+                        </div>
+                        <div class="card p-relative" style="border-radius: 5px; border: 1px solid #ccc;">
+                            <div class="card__image">
+                                <a href=""><img style="border-radius: 5px 5px 0 0;" src="image/cart/p1.jpeg" alt=""></a>
+                            </div>
+                            <div class="card__address">
+                                <h4 class="f-14 truncate">
+                                    <img src="image/cart/hh.png" style="translate: 0 3px;" alt="" width="17px" height="17px">
+                                    Le Castella Hà Nội - Taste Of Taiwan - Vũ Hữu
+                                </h4>
+                                <p class="f-12 truncate" style="padding-top: 5px; color: #555353;">
+                                    170 Vũ Hữu, P. Thanh Xuân Bắc, Thanh Xuân, Hà Nội
+                                </p>
+                            </div>
+                            <div style="border-bottom: 1px solid #eee;"></div>
+                            <div class="card__recommend f-12" style="padding-bottom: 10px;">
+                                <i class="fa-solid fa-tag" style="color: red; font-size: 16px !important; padding-right: 6px;"></i>
+                                <strong style="color: #187caa;">Giảm hết 6%</strong>
+                            </div>
+                            <span class="stt online p-absolute" title="Mở cửa" style="color: rgb(35, 152, 57); background-color: rgb(35, 152, 57); width: 15px; height: 15px; display: block; border-radius: 50%;"></span>
+                        </div>
+                        <div class="card p-relative" style="border-radius: 5px; border: 1px solid #ccc;">
+                            <div class="card__image">
+                                <a href=""><img style="border-radius: 5px 5px 0 0;" src="image/cart/p1.jpeg" alt=""></a>
+                            </div>
+                            <div class="card__address">
+                                <h4 class="f-14 truncate">
+                                    <img src="image/cart/hh.png" style="translate: 0 3px;" alt="" width="17px" height="17px">
+                                    Le Castella Hà Nội - Taste Of Taiwan - Vũ Hữu
+                                </h4>
+                                <p class="f-12 truncate" style="padding-top: 5px; color: #555353;">
+                                    170 Vũ Hữu, P. Thanh Xuân Bắc, Thanh Xuân, Hà Nội
+                                </p>
+                            </div>
+                            <div style="border-bottom: 1px solid #eee;"></div>
+                            <div class="card__recommend f-12" style="padding-bottom: 10px;">
+                                <i class="fa-solid fa-tag" style="color: red; font-size: 16px !important; padding-right: 6px;"></i>
+                                <strong style="color: #187caa;">Giảm hết 6%</strong>
+                            </div>
+                            <span class="stt online p-absolute" title="Mở cửa" style="color: rgb(35, 152, 57); background-color: rgb(35, 152, 57); width: 15px; height: 15px; display: block; border-radius: 50%;"></span>
+                        </div>
+                        <div class="card p-relative" style="border-radius: 5px; border: 1px solid #ccc;">
+                            <div class="card__image">
+                                <a href=""><img style="border-radius: 5px 5px 0 0;" src="image/cart/p1.jpeg" alt=""></a>
+                            </div>
+                            <div class="card__address">
+                                <h4 class="f-14 truncate">
+                                    <img src="image/cart/hh.png" style="translate: 0 3px;" alt="" width="17px" height="17px">
+                                    Le Castella Hà Nội - Taste Of Taiwan - Vũ Hữu
+                                </h4>
+                                <p class="f-12 truncate" style="padding-top: 5px; color: #555353;">
+                                    170 Vũ Hữu, P. Thanh Xuân Bắc, Thanh Xuân, Hà Nội
+                                </p>
+                            </div>
+                            <div style="border-bottom: 1px solid #eee;"></div>
+                            <div class="card__recommend f-12" style="padding-bottom: 10px;">
+                                <i class="fa-solid fa-tag" style="color: red; font-size: 16px !important; padding-right: 6px;"></i>
+                                <strong style="color: #187caa;">Giảm hết 6%</strong>
+                            </div>
+                            <span class="stt online p-absolute" title="Mở cửa" style="color: rgb(35, 152, 57); background-color: rgb(35, 152, 57); width: 15px; height: 15px; display: block; border-radius: 50%;"></span>
+                        </div>
+                        <div class="card p-relative" style="border-radius: 5px; border: 1px solid #ccc;">
+                            <div class="card__image">
+                                <a href=""><img style="border-radius: 5px 5px 0 0;" src="image/cart/p1.jpeg" alt=""></a>
+                            </div>
+                            <div class="card__address">
+                                <h4 class="f-14 truncate">
+                                    <img src="image/cart/hh.png" style="translate: 0 3px;" alt="" width="17px" height="17px">
+                                    Le Castella Hà Nội - Taste Of Taiwan - Vũ Hữu
+                                </h4>
+                                <p class="f-12 truncate" style="padding-top: 5px; color: #555353;">
+                                    170 Vũ Hữu, P. Thanh Xuân Bắc, Thanh Xuân, Hà Nội
+                                </p>
+                            </div>
+                            <div style="border-bottom: 1px solid #eee;"></div>
+                            <div class="card__recommend f-12" style="padding-bottom: 10px;">
+                                <i class="fa-solid fa-tag" style="color: red; font-size: 16px !important; padding-right: 6px;"></i>
+                                <strong style="color: #187caa;">Giảm hết 6%</strong>
+                            </div>
+                            <span class="stt online p-absolute" title="Mở cửa" style="color: rgb(35, 152, 57); background-color: rgb(35, 152, 57); width: 15px; height: 15px; display: block; border-radius: 50%;"></span>
+                        </div>
+                        <div class="card p-relative" style="border-radius: 5px; border: 1px solid #ccc;">
+                            <div class="card__image">
+                                <a href=""><img style="border-radius: 5px 5px 0 0;" src="image/cart/p1.jpeg" alt=""></a>
+                            </div>
+                            <div class="card__address">
+                                <h4 class="f-14 truncate">
+                                    <img src="image/cart/hh.png" style="translate: 0 3px;" alt="" width="17px" height="17px">
+                                    Le Castella Hà Nội - Taste Of Taiwan - Vũ Hữu
+                                </h4>
+                                <p class="f-12 truncate" style="padding-top: 5px; color: #555353;">
+                                    170 Vũ Hữu, P. Thanh Xuân Bắc, Thanh Xuân, Hà Nội
+                                </p>
+                            </div>
+                            <div style="border-bottom: 1px solid #eee;"></div>
+                            <div class="card__recommend f-12" style="padding-bottom: 10px;">
+                                <i class="fa-solid fa-tag" style="color: red; font-size: 16px !important; padding-right: 6px;"></i>
+                                <strong style="color: #187caa;">Giảm hết 6%</strong>
+                            </div>
+                            <span class="stt online p-absolute" title="Mở cửa" style="color: rgb(35, 152, 57); background-color: rgb(35, 152, 57); width: 15px; height: 15px; display: block; border-radius: 50%;"></span>
+                        </div>
+                        <div class="card p-relative" style="border-radius: 5px; border: 1px solid #ccc;">
+                            <div class="card__image">
+                                <a href=""><img style="border-radius: 5px 5px 0 0;" src="image/cart/p1.jpeg" alt=""></a>
+                            </div>
+                            <div class="card__address">
+                                <h4 class="f-14 truncate">
+                                    <img src="image/cart/hh.png" style="translate: 0 3px;" alt="" width="17px" height="17px">
+                                    Le Castella Hà Nội - Taste Of Taiwan - Vũ Hữu
+                                </h4>
+                                <p class="f-12 truncate" style="padding-top: 5px; color: #555353;">
+                                    170 Vũ Hữu, P. Thanh Xuân Bắc, Thanh Xuân, Hà Nội
+                                </p>
+                            </div>
+                            <div style="border-bottom: 1px solid #eee;"></div>
+                            <div class="card__recommend f-12" style="padding-bottom: 10px;">
+                                <i class="fa-solid fa-tag" style="color: red; font-size: 16px !important; padding-right: 6px;"></i>
+                                <strong style="color: #187caa;">Giảm hết 6%</strong>
+                            </div>
+                            <span class="stt online p-absolute" title="Mở cửa" style="color: rgb(35, 152, 57); background-color: rgb(35, 152, 57); width: 15px; height: 15px; display: block; border-radius: 50%;"></span>
+                        </div>
+                        <div class="card p-relative" style="border-radius: 5px; border: 1px solid #ccc;">
+                            <div class="card__image">
+                                <a href=""><img style="border-radius: 5px 5px 0 0;" src="image/cart/p1.jpeg" alt=""></a>
+                            </div>
+                            <div class="card__address">
+                                <h4 class="f-14 truncate">
+                                    <img src="image/cart/hh.png" style="translate: 0 3px;" alt="" width="17px" height="17px">
+                                    Le Castella Hà Nội - Taste Of Taiwan - Vũ Hữu
+                                </h4>
+                                <p class="f-12 truncate" style="padding-top: 5px; color: #555353;">
+                                    170 Vũ Hữu, P. Thanh Xuân Bắc, Thanh Xuân, Hà Nội
+                                </p>
+                            </div>
+                            <div style="border-bottom: 1px solid #eee;"></div>
+                            <div class="card__recommend f-12" style="padding-bottom: 10px;">
+                                <i class="fa-solid fa-tag" style="color: red; font-size: 16px !important; padding-right: 6px;"></i>
+                                <strong style="color: #187caa;">Giảm hết 6%</strong>
+                            </div>
+                            <span class="stt online p-absolute" title="Mở cửa" style="color: rgb(35, 152, 57); background-color: rgb(35, 152, 57); width: 15px; height: 15px; display: block; border-radius: 50%;"></span>
+                        </div>
+                        <div class="card p-relative" style="border-radius: 5px; border: 1px solid #ccc;">
+                            <div class="card__image">
+                                <a href=""><img style="border-radius: 5px 5px 0 0;" src="image/cart/p1.jpeg" alt=""></a>
+                            </div>
+                            <div class="card__address">
+                                <h4 class="f-14 truncate">
+                                    <img src="image/cart/hh.png" style="translate: 0 3px;" alt="" width="17px" height="17px">
+                                    Le Castella Hà Nội - Taste Of Taiwan - Vũ Hữu
+                                </h4>
+                                <p class="f-12 truncate" style="padding-top: 5px; color: #555353;">
+                                    170 Vũ Hữu, P. Thanh Xuân Bắc, Thanh Xuân, Hà Nội
+                                </p>
+                            </div>
+                            <div style="border-bottom: 1px solid #eee;"></div>
+                            <div class="card__recommend f-12" style="padding-bottom: 10px;">
+                                <i class="fa-solid fa-tag" style="color: red; font-size: 16px !important; padding-right: 6px;"></i>
+                                <strong style="color: #187caa;">Giảm hết 6%</strong>
+                            </div>
+                            <span class="stt online p-absolute" title="Mở cửa" style="color: rgb(35, 152, 57); background-color: rgb(35, 152, 57); width: 15px; height: 15px; display: block; border-radius: 50%;"></span>
+                        </div>
+                      
+                    </section>
+                    <p class="text-center f-14" style="color: #0288d1; cursor: pointer;">Xem thêm <i class="fa-solid fa-rotate-left"></i></p>
+                </div>
+                <div style=" background-color: #ffffff; padding: 15px; border-radius: 5px; margin-top: 20px; margin-bottom: 30px; padding: 15px 30px;">
+                    <ul class="flex flex-c flex-sb">
+                        <li class="style-li"><h4>Bộ sưu tập</h4></li>
+                        <li class="style-li"><a href="" style="font-size: 14px; color: #0288d1;"><i class="fa-solid fa-border-all" style="padding-right: 5px; font-size: 12px;"></i>Xem tất cả</a></li>
+                    </ul>
+                    <section class="order__food order__food--dealsList order__food--dealsListMarket" style="gap: 20px; padding: 20px 0;">
+                        <div class="card p-relative" style="border-radius: 5px; ">
+                            <div class="card__image">
+                                <a href=""><img style="border-radius: 5px; height: 114px;" src="image/market/ud1.png" alt=""></a>
+                            </div>
+                            <div class="card__address">
+                                <h4 class="f-14 truncate">
+                                    Tiệc cuối tuần, giảm tưng bừng 105.000Đ
+                                </h4>
+                                <p class="f-12 truncate" style="padding-top: 5px; color: #0288d1;">
+                                    200 địa điểm
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card p-relative" style="border-radius: 5px; ">
+                            <div class="card__image">
+                                <a href=""><img style="border-radius: 5px; height: 114px;" src="image/market/ud1.png" alt=""></a>
+                            </div>
+                            <div class="card__address">
+                                <h4 class="f-14 truncate">
+                                    Tiệc cuối tuần, giảm tưng bừng 105.000Đ
+                                </h4>
+                                <p class="f-12 truncate" style="padding-top: 5px; color: #0288d1;">
+                                    200 địa điểm
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card p-relative" style="border-radius: 5px; ">
+                            <div class="card__image">
+                                <a href=""><img style="border-radius: 5px; height: 114px;" src="image/market/ud1.png" alt=""></a>
+                            </div>
+                            <div class="card__address">
+                                <h4 class="f-14 truncate">
+                                    Tiệc cuối tuần, giảm tưng bừng 105.000Đ
+                                </h4>
+                                <p class="f-12 truncate" style="padding-top: 5px; color: #0288d1;">
+                                    200 địa điểm
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card p-relative" style="border-radius: 5px; ">
+                            <div class="card__image">
+                                <a href=""><img style="border-radius: 5px; height: 114px;" src="image/market/ud1.png" alt=""></a>
+                            </div>
+                            <div class="card__address">
+                                <h4 class="f-14 truncate">
+                                    Tiệc cuối tuần, giảm tưng bừng 105.000Đ
+                                </h4>
+                                <p class="f-12 truncate" style="padding-top: 5px; color: #0288d1;">
+                                    200 địa điểm
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card p-relative" style="border-radius: 5px; ">
+                            <div class="card__image">
+                                <a href=""><img style="border-radius: 5px; height: 114px;" src="image/market/ud1.png" alt=""></a>
+                            </div>
+                            <div class="card__address">
+                                <h4 class="f-14 truncate">
+                                    Tiệc cuối tuần, giảm tưng bừng 105.000Đ
+                                </h4>
+                                <p class="f-12 truncate" style="padding-top: 5px; color: #0288d1;">
+                                    200 địa điểm
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card p-relative" style="border-radius: 5px; ">
+                            <div class="card__image">
+                                <a href=""><img style="border-radius: 5px; height: 114px;" src="image/market/ud1.png" alt=""></a>
+                            </div>
+                            <div class="card__address">
+                                <h4 class="f-14 truncate">
+                                    Tiệc cuối tuần, giảm tưng bừng 105.000Đ
+                                </h4>
+                                <p class="f-12 truncate" style="padding-top: 5px; color: #0288d1;">
+                                    200 địa điểm
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card p-relative" style="border-radius: 5px; ">
+                            <div class="card__image">
+                                <a href=""><img style="border-radius: 5px; height: 114px;" src="image/market/ud1.png" alt=""></a>
+                            </div>
+                            <div class="card__address">
+                                <h4 class="f-14 truncate">
+                                    Tiệc cuối tuần, giảm tưng bừng 105.000Đ
+                                </h4>
+                                <p class="f-12 truncate" style="padding-top: 5px; color: #0288d1;">
+                                    200 địa điểm
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card p-relative" style="border-radius: 5px; ">
+                            <div class="card__image">
+                                <a href=""><img style="border-radius: 5px; height: 114px;" src="image/market/ud1.png" alt=""></a>
+                            </div>
+                            <div class="card__address">
+                                <h4 class="f-14 truncate">
+                                    Tiệc cuối tuần, giảm tưng bừng 105.000Đ
+                                </h4>
+                                <p class="f-12 truncate" style="padding-top: 5px; color: #0288d1;">
+                                    200 địa điểm
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card p-relative" style="border-radius: 5px; ">
+                            <div class="card__image">
+                                <a href=""><img style="border-radius: 5px; height: 114px;" src="image/market/ud1.png" alt=""></a>
+                            </div>
+                            <div class="card__address">
+                                <h4 class="f-14 truncate">
+                                    Tiệc cuối tuần, giảm tưng bừng 105.000Đ
+                                </h4>
+                                <p class="f-12 truncate" style="padding-top: 5px; color: #0288d1;">
+                                    200 địa điểm
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="container-xl section__first p-relative" style="background-color: #ffffff; padding: 20px 150px 50px; border-radius: 5px;  top: 1100px;">
+        <h1 style="font-size: 22px;">Đơn hàng của bạn sẽ được bảo quản như thế nào?</h1>
+        <p style="padding: 15px 0; font-size: 15px;">ShopeeFood sẽ bảo quản đơn của bạn bằng túi & thùng để chống nắng mưa, giữ nhiệt... trên đường đi một cách tốt nhất.</p>
+        <div>
+            <img src="image/market/sec1.png" alt="">
+        </div>
+    </section>
+    <section class="container-xl section__second p-relative flex flex-c" style="background-color: #ffffff; padding: 50px 350px 50px 150px; border-radius: 5px;  top: 1150px;">
+        <div>
+            <h1 style="font-size: 22px;">Ứng dụng Shopee Partner</h1>
+            <p style="padding: 15px 0; font-size: 14px; line-height: 1.5;">- <span style=" font-weight: bolder;">Ứng dụng Shopee Partner</span> là ứng dụng quản lý đơn hàng cho các nhà hàng đối tác của dịch vụ đặt món tận nơi</p>
+            <p style="padding: 15px 0; font-size: 14px; line-height: 1.5;">- <span style="font-weight: bolder;">ShopeeFood.vn</span> luôn sẵn sàng hợp tác với các nhà hàng, quán ăn, cafe... để mở rộng kinh doanh cũng như gia tăng khách hàng. Hãy kết nối vào hệ thống đặt và giao hàng để giảm bớt chi phí quản lý, vận hành, marketing, công nghệ...
+            </p>
+            <p style="font-size: 14px; line-height: 1.5;">Đăng ký tham gia: <span style="color: #0288d1; font-weight: bolder; cursor: pointer;">tại đây</span></p>
+        </div>
+        <div>
+            <img src="image/market/sc2.png" alt="" style="position: absolute;
+            bottom: -1px;
+            right: 0;
+            z-index: 2;
+            text-align: center;
+            height: 340px;
+            width: 350px;">
+        </div>
+    </section>
+    <section class="container-xl section__second p-relative flex flex-c" style="background-color: #ffffff; padding: 50px 350px 50px 150px; border-radius: 5px;  top: 1200px;">
+        <div style="padding-right: 30px;">
+            <h1 style="font-size: 22px;"><span style="color: #EE4D2D;">ShopeeFood.vn</span> <span style="color: #0288d1;">
+                Hợp tác nhân viên giao nhận - ShopeeFood Driver
+            </span></h1>
+            <p style="padding: 15px 0; font-size: 14px; line-height: 1.5;">Giúp bạn tăng thu nhập trong thời gian rảnh rỗi</p>
+            <p style="padding: 15px 0; font-size: 14px; line-height: 1.5;"><span style="color: #EE4D2D;">ShopeeFood</span> tìm kiếm hợp tác với các cá nhân để thực hiện việc giao hàng, chúng tôi sẽ cung cấp ứng dụng (app), 1 số dụng cụ cần thiết để bạn có thể tiếp nhận & giao hàng, kiếm thêm thu nhập
+                Đăng ký tham gia tại đây hoặc gửi Email qua tuyendung@gofast.vn - hoặc gọi qua số điện thoại (028) 7109 9179.
+            </p>
+        </div>
+        <div>
+            <img src="image/market/sec3.png" alt="" style="position: absolute;
+            bottom: -1px;
+            right: 80px;
+            z-index: 2;
+            text-align: center;
+            height: 247px;
+            width: 170px;"> 
+        </div>
+    </section>
+    <section class="container-xl p-relative footer__clone" style=" top: 1250px;">
+        <h4 style="color: rgba(0,0,0,.54); font-size: 14px;">DANH MỤC</h4>
+
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+            <div>
+                <a href="" style="padding-top: 20px;">
+                    <h4 style="color: rgba(0,0,0,.54); font-size: 14px;">THUỐC</h4> 
+                </a>
+                <nav style="padding-top: 10px;">
+                    <ul class="flex flex-c" style="flex-wrap: wrap;">
+                        <li class="style-li"><a href="" style="font-size: 13px; color: rgba(0,0,0,.54); line-height: 1.5;">Hóa mỹ phẩm |</a></li>
+                        <li class="style-li"><a href="" style="font-size: 13px; color: rgba(0,0,0,.54); padding-left: 5px; line-height: 1.5;"> BCS |</a></li>
+                        <li class="style-li"><a href="" style="font-size: 13px; color: rgba(0,0,0,.54); padding-left: 5px; line-height: 1.5;">Thiết bị |</a></li>
+                        <li class="style-li"><a href="" style="font-size: 13px; color: rgba(0,0,0,.54); padding-left: 5px; line-height: 1.5;">Thuốc tây |</a></li>
+                        <li class="style-li"><a href="" style="font-size: 13px; color: rgba(0,0,0,.54); line-height: 1.5;">Khẩu trang |</a></li>
+                        <li class="style-li"><a href="" style="font-size: 13px; color: rgba(0,0,0,.54); padding-left: 5px; line-height: 1.5;">Khẩn cấp</a></li>
+                    </ul>
+                </nav>
+                <a href="" style="padding-top: 20px;">
+                    <h4 style="color: rgba(0,0,0,.54); font-size: 14px;">THÚ CƯNG</h4> 
+                </a>
+                <nav style="padding-top: 10px;">
+                    <ul>
+                        <li class="style-li"><a href="" style="font-size: 13px; color: rgba(0,0,0,.54);">Thú Cưng</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <a href="" style="padding-top: 20px;">
+                    <h4 style="color: rgba(0,0,0,.54); font-size: 14px;">ĐỒ ĂN HN</h4> 
+                </a>
+                <nav style="padding-top: 10px;">
+                    <ul>
+                        <li class="style-li"><a href="" style="font-size: 13px; color: rgba(0,0,0,.54);">Đồ ăn HN</a></li>
+                    </ul>
+                </nav>
+                <a href="" style="padding-top: 20px;">
+                    <h4 style="color: rgba(0,0,0,.54); font-size: 14px;">ĐẶT BÀN HN</h4> 
+                </a>
+                <a href="" style="padding-top: 20px;">
+                    <h4 style="color: rgba(0,0,0,.54); font-size: 14px;">THỰC PHẨM HN<h4> 
+                </a>
+            </div>
+            <div>
+                <a href="" style="padding-top: 20px;">
+                    <h4 style="color: rgba(0,0,0,.54); font-size: 14px;">SẢN PHẨM HN</h4> 
+                </a>
+               
+                <a href="" style="padding-top: 20px;">
+                    <h4 style="color: rgba(0,0,0,.54); font-size: 14px;">SẢN PHẨM</h4> 
+                </a>
+                <nav style="padding-top: 10px;">
+                    <ul class="flex flex-c" style="flex-wrap: wrap;">
+                        <li class="style-li"><a href="" style="font-size: 13px; color: rgba(0,0,0,.54); line-height: 1.5;">Mỹ phẩm |</a></li>
+                        <li class="style-li"><a href="" style="font-size: 13px; color: rgba(0,0,0,.54); padding-left: 5px; line-height: 1.5;"> Đồ chơi |</a></li>
+                        <li class="style-li"><a href="" style="font-size: 13px; color: rgba(0,0,0,.54); padding-left: 5px; line-height: 1.5;">Sữa |</a></li>
+                        <li class="style-li"><a href="" style="font-size: 13px; color: rgba(0,0,0,.54); padding-left: 5px; line-height: 1.5;">Tã Bỉm |</a></li>
+                        <li class="style-li"><a href="" style="font-size: 13px; color: rgba(0,0,0,.54); padding-left: 5px; line-height: 1.5;">Dụng cụ |</a></li>
+                        <li class="style-li"><a href="" style="font-size: 13px; color: rgba(0,0,0,.54); line-height: 1.5;">Quần áo |</a></li>
+                        <li class="style-li"><a href="" style="font-size: 13px; color: rgba(0,0,0,.54); padding-left: 5px; line-height: 1.5;">Giày dép |</a></li>
+                        <li class="style-li"><a href="" style="font-size: 13px; color: rgba(0,0,0,.54); padding-left: 5px; line-height: 1.5;">Điện tử |</a></li>
+                        <li class="style-li"><a href="" style="font-size: 13px; color: rgba(0,0,0,.54); padding-left: 5px; line-height: 1.5;">Trang sức</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <a href="" style="padding-top: 20px;">
+                    <h4 style="color: rgba(0,0,0,.54); font-size: 14px;">HOA</h4> 
+                </a>
+                <nav style="padding-top: 10px;">
+                    <ul class="flex flex-c" style="flex-wrap: wrap;">
+                        <li class="style-li"><a href="" style="font-size: 13px; color: rgba(0,0,0,.54); line-height: 1.5;">Chia buồn |</a></li>
+                        <li class="style-li"><a href="" style="font-size: 13px; color: rgba(0,0,0,.54); padding-left: 5px; line-height: 1.5;"> Cây cảnh |</a></li>
+                        <li class="style-li"><a href="" style="font-size: 13px; color: rgba(0,0,0,.54); padding-left: 5px; line-height: 1.5;">Chúc mừng |</a></li>
+                        <li class="style-li"><a href="" style="font-size: 13px; color: rgba(0,0,0,.54); padding-left: 5px; line-height: 1.5;">Sinh nhật |</a></li>
+                        <li class="style-li"><a href="" style="font-size: 13px; color: rgba(0,0,0,.54); line-height: 1.5;">Tình yêu</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <footer class="p-relative" style="padding-bottom: 40px; background-color: #eee; top: 1300px;">
+        <div class="container-xl flex flex-sb">
+            <div class="footer__company">
+                <h3 style="font-size: 16px;">Công ty</h3>
+                <ul>
+                    <li><a href="">Giới thiệu</a></li>
+                    <li><a href="">Trung tâm trợ giúp</a></li>
+                    <li><a href="">Quy chế</a></li>
+                    <li><a href="">Điều khoản sử dụng</a></li>
+                    <li><a href="">Bảo mật thông tin</a></li>
+                    <li><a href="">Giải quyết khiếu nại</a></li>
+                    <li><a href="">Liên hệ</a></li>
+                    <li><a href="">Hợp tác nhân viên giao nhận</a></li>
+                    <li><a href="">Đăng ký quán</a></li>
+                    <li><a href="">ShopeeFood Uni</a></li>
+                    <li><a href="">Shopee Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer__app">
+                <h3 style="font-size: 16px;">Ứng dụng ShopeeFood</h3>
+                <div style="margin-top: 25px;">
+                    <div style="margin-bottom: 25px;">
+                        <img width="122px" height="40px" src="./image/detail/appstore.png" alt="">
+                    </div>
+                    <div style="margin-bottom: 25px;">
+                        <img width="122px" height="40px" src="./image/detail/ggplay.png" alt="">
+                    </div>
+                    <div style="margin-bottom: 25px;">
+                        <img width="122px" height="40px" src="./image/detail/Appgalexy.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="footer__logo text-center">
+                <div>
+                    <img  width="100px" height="100px" src="image/detail/logofooter.png" alt="">
+                </div>
+                <div style="font-size: 12px; color: #959595; padding: 20px 0 20px 0;">
+                    © 2023 ShopeeFood
+                </div>
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="footer__address" style="text-align: right;">
+                <h3 style="margin-bottom: 25px;">Địa chỉ công ty</h3>
+                <p>Công Ty Cổ Phần Foody</p>
+                <p>Lầu G, Tòa nhà Jabes 1,</p>
+                <p>số 244 đường Cống Quỳnh, phường Phạm Ngũ Lão, Quận 1, TPHCM</p>
+                <p>Giấy CN ĐKDN số: 0311828036</p>
+                <p>do Sở Kế hoạch và Đầu tư TP.HCM cấp ngày 11/6/2012,</p>
+                <p>sửa đổi lần thứ 23, ngày 10/12/2020</p>
+                <p>Chịu trách nhiệm quản lý nội dung: Nguyễn Hồ Quảng Giang</p>
+                <p>Điện thoại liên hệ: 028 71096879</p>
+                <p style="display: flex; justify-content: flex-end;"><span>Email:</span> <a href="" style="color: #0288d1;">support@shopeefood.vn</a></p>
+                <div>
+                    <img src="image/detail/bctdetail.jpg" alt="" width="177px" height="67px">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const detailPage = document.querySelector('#detail_page');
+        window.addEventListener('scroll' , () => {
+            detailPage.classList.toggle('p-fixed2', window.scrollY > 0)
+        });
+    </script>
+</body>
+</html>
